@@ -15,7 +15,7 @@ function MovieCard({ movie }) {
           <button
             className="favorite-btn"
             onClick={onFavoriteClick}>
-            Heart
+            ❤️
           </button>
         </div>
       </div>
