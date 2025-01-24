@@ -12,12 +12,10 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<Home />}
-          />
+            element={<Home />}/>
           <Route
             path="/favorites"
-            element={<Favorites />}
-          />
+            element={<Favorites />}/>
         </Routes>
       </main>
     </div>
