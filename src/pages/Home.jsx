@@ -26,8 +26,8 @@ function Home() {
 
   const handleSearch = async (e) => {
     e.preventDefault();
-    if (!searchQuery.trim()) return
-    if (loading) return
+    if (!searchQuery.trim()) return;
+    if (loading) return;
     setLoading(true);
     try {
       const searchResults = await searchMovies(searchQuery);
@@ -51,8 +51,7 @@ function Home() {
           placeholder="Search for movies..."
           className="search-input"
           value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-        />
+          onChange={(e) => setSearchQuery(e.target.value)}/>
         <button
           type="submit"
           className="search-button">
@@ -71,8 +70,7 @@ function Home() {
               movie.title.toLowerCase().startsWith(searchQuery) && (
                 <MovieCard
                   movie={movie}
-                  key={movie.id}
-                />
+                  key={movie.id}/>
               ),
           )}
         </div>
